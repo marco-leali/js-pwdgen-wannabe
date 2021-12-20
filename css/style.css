@@ -1,0 +1,9 @@
+#password
+{
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: lightblue 2px solid;
+    font-size: 30px;
+    color: lightcoral;
+}

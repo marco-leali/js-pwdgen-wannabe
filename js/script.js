@@ -22,12 +22,23 @@ Abbellire la pagina dal punto di vista grafico a piacimento!
 9.copio il valore risult all'interno del div con un'innerHTML
 
 */
+
+console.log("JS OK");
+
 const salt = "21";
 
 const inputName = prompt("Quale è il tuo Nome?");
+console.log(`Save Name -> ${inputName}`);
+
 const inputSurname = prompt("Quale è il tuo Cognome?");
+console.log(`Save Surname -> ${inputSurname}`);
 const inputColor = prompt("Quale è il tuo colore preferito?");
+console.log(`Save Color -> ${inputColor}`);
 
 const result = `${inputName}${inputSurname}${inputColor}${salt}`;      
+console.log(`Generate Password -> ${result}`);
 
-const elementtowrite = document.getElementById('password')
+const elementtowrite = document.getElementById('password');
+console.log(`Get Element by id -> ${elementtowrite}`);
+
+elementtowrite.innerHTML(`${result}`);
