@@ -23,22 +23,31 @@ Abbellire la pagina dal punto di vista grafico a piacimento!
 
 */
 
+/* verifico che il file esterno di javascript sia correttamente collegato */
 console.log("JS OK");
 
+/* imposto la costante per salare la password */
 const salt = "21";
 
+/* richiedo il nome in input all'utente */
 const inputName = prompt("Quale è il tuo Nome?");
 console.log(`Save Name -> ${inputName}`);
 
+/* richiedo il cognome in input all'utente */
 const inputSurname = prompt("Quale è il tuo Cognome?");
 console.log(`Save Surname -> ${inputSurname}`);
+
+/* richiedo il colore preferito in input all'utente */
 const inputColor = prompt("Quale è il tuo colore preferito?");
 console.log(`Save Color -> ${inputColor}`);
 
+/* genero la password */
 const result = `${inputName}${inputSurname}${inputColor}${salt}`;      
 console.log(`Generate Password -> ${result}`);
 
+/* recupero l'elemento da sovrascrivere tramite id */
 const elementtowrite = document.getElementById('password');
 console.log(`Get Element by id -> ${elementtowrite}`);
 
+/* copio il valore generato all'interno del mio elemento */
 elementtowrite.innerHTML = `${result}`;
