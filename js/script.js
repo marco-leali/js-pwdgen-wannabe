@@ -41,4 +41,4 @@ console.log(`Generate Password -> ${result}`);
 const elementtowrite = document.getElementById('password');
 console.log(`Get Element by id -> ${elementtowrite}`);
 
-elementtowrite.innerHTML(`${result}`);
+elementtowrite.innerHTML = `${result}`;

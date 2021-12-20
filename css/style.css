@@ -1,3 +1,7 @@
+*{
+
+    font-family: Arial, Helvetica, sans-serif;
+}
 #password
 {
     font-weight: bold;
@@ -6,4 +10,8 @@
     border: lightblue 2px solid;
     font-size: 30px;
     color: lightcoral;
+}
+h1
+{
+    color: lightgreen;
 }
